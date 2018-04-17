@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AlertPet</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_sign_in_short">Inscription</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Mot de passe trop court, entrez un mot de passe d'au moins 6 caractères!</string>
+    <string name="auth_failed">Authentification échouée, entrez des informations valides ou inscrivez-vous</string>
+    <string name="change_email">Changer adresse email</string>
+    <string name="change_password">Changer de mot de passe</string>
+    <string name="send_password_reset_email">Envoyez un mail pour réinitialiser votre mot de passe</string>
+    <string name="remove_user">Supprimer utilisateur</string>
+    <string name="new_pass">Nouveau mot de passe</string>
+    <string name="title_activity_profile">Postit</string>
+    <string name="title_activity_login">Connexion</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_name">Nom</string>
+    <string name="btn_login">CONNEXION</string>
+    <string name="btn_link_to_register">Pas encore membre? Enregistrez-vous maintenant!</string>
+    <string name="btn_link_to_login">Déjà inscrit. Connecte toi!</string>
+    <string name="title_activity_reset_password">Réinitialisation mot de passe</string>
+    <string name="btn_forgot_password">Mot de passe oublié?</string>
+    <string name="btn_reset_password">Réinitialisation mot de passe</string>
+    <string name="btn_back"><![CDATA[<< Retour]]></string>
+    <string name="hint_new_email">Nouvelle adresse mail</string>
+    <string name="btn_change">Changer</string>
+    <string name="btn_send">Envoyer</string>
+    <string name="btn_remove">Supprimer</string>
+    <string name="btn_sign_out">Deconnexion</string>
+    <string name="lbl_forgot_password">Mot de passe oublié?</string>
+    <string name="forgot_password_msg">Nous avons besoin de votre adresse mail pour vous envoyer un mot de passe de réinitialisation. Veuillez verifier vos spam si le mail ne se trouve pas dans votre boite de réception.</string>
+    <string name="prompt_password">Changer de mot de passe</string>
+    <string name="signup">INSCRIPTION</string>
+
+    <string name="action_settings">Paramètre</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Général">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="Accueil"/>
+            <item
+                android:id="@+id/profil"
+                android:icon="@drawable/ic_profile"
+                android:title="Profil" />
+            <item
+                android:id="@+id/messages"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:title="Messages" />
+            <item
+                android:id="@+id/pictures"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Albums" />
+        </menu>
+    </item>
+
+    <item android:title="Option">
+        <menu>
+            <item
+                android:id="@+id/parameters"
+                android:icon="@drawable/ic_settings"
+                android:title="Paramètres personnels" />
+            <item
+                android:id="@+id/about"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="A propos" />
+            <item
+                android:id="@+id/disconnect"
+                android:icon="@drawable/ic_logout"
+                android:title="Se déconnecter" />
+        </menu>
+    </item>
+</menu>
