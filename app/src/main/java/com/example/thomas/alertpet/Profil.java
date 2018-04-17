@@ -11,9 +11,7 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-/**
- * Created by skewrad on 17/01/18.
- */
+
 
 public class Profil extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
