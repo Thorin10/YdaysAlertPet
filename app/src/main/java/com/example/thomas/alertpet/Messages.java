@@ -77,7 +77,7 @@ public class Messages extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(Messages.this, About.class);
+            Intent intent = new Intent(Messages.this, Infos.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){
