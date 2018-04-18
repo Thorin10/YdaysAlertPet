@@ -11,14 +11,10 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-/**
- * Created by skewrad on 17/01/18.
- */
 
 public class Profil extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Button signOut;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
 
@@ -82,11 +78,6 @@ public class Profil extends AppCompatActivity
             auth.signOut();
         }
         return true;
-    }
-
-    //sign out method
-    public void signOut() {
-        auth.signOut();
     }
 
     @Override

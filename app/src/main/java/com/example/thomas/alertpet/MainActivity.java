@@ -18,7 +18,6 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Button signOut;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
 
@@ -26,13 +25,8 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_main);
-
-        //get firebase auth instance
         auth = FirebaseAuth.getInstance();
-
-        //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -101,12 +95,6 @@ public class MainActivity extends AppCompatActivity
         }
         return true;
     }
-
-    //sign out method
-    public void signOut() {
-        auth.signOut();
-    }
-
     @Override
     public void onStart() {
         super.onStart();

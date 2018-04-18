@@ -21,7 +21,7 @@ public class Parametre extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
     private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
-            changeEmail, changePassword, sendEmail, remove, signOut;
+            changeEmail, changePassword, sendEmail, remove;
 
     private EditText oldEmail, newEmail, password, newPassword;
     private ProgressBar progressBar;
@@ -275,12 +275,6 @@ public class Parametre extends AppCompatActivity
         }
         return true;
     }
-
-    //sign out method
-    public void signOut() {
-        auth.signOut();
-    }
-
     @Override
     protected void onResume() {
         super.onResume();

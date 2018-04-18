@@ -11,14 +11,9 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-/**
- * Created by skewrad on 17/01/18.
- */
-
 public class Albums extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Button signOut;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
 
@@ -29,13 +24,8 @@ public class Albums extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        //get firebase auth instance
         auth = FirebaseAuth.getInstance();
-
-        //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
         authListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -84,11 +74,6 @@ public class Albums extends AppCompatActivity
             auth.signOut();
         }
         return true;
-    }
-
-    //sign out method
-    public void signOut() {
-        auth.signOut();
     }
 
     @Override

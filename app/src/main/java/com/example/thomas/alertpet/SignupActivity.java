@@ -30,8 +30,6 @@ public class SignupActivity extends AppCompatActivity {
     private Firebase firebaseRef;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
