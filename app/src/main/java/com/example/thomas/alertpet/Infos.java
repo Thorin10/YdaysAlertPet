@@ -64,7 +64,7 @@ public class Infos extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(Infos.this, About.class);
+            Intent intent = new Intent(Infos.this, Infos.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){
