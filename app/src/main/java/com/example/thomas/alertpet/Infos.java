@@ -33,7 +33,7 @@ public class Infos extends AppCompatActivity
                 if (user == null) {
                     // user auth state is changed - user is null
                     // launch login activity
-                    startActivity(new Intent(About.this, LoginActivity.class));
+                    startActivity(new Intent(Infos.this, LoginActivity.class));
                     finish();
                 }
             }
@@ -47,24 +47,24 @@ public class Infos extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.home) {
-            Intent intent = new Intent(About.this, MainActivity.class);
+            Intent intent = new Intent(Infos.this, MainActivity.class);
             startActivity(intent);
         }
         else if (id == R.id.profil) {
-            Intent intent = new Intent(About.this, Profil.class);
+            Intent intent = new Intent(Infos.this, Profil.class);
             startActivity(intent);
         }
 
         else if (id == R.id.pictures) {
-            Intent intent = new Intent(About.this, Albums.class);
+            Intent intent = new Intent(Infos.this, Albums.class);
             startActivity(intent);
         }
         else if (id == R.id.parameters) {
-            Intent intent = new Intent(About.this, Parametre.class);
+            Intent intent = new Intent(Infos.this, Parametre.class);
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(About.this, About.class);
+            Intent intent = new Intent(Infos.this, About.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){

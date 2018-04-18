@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Parametre extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
-    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
+    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser, signOut,
             changeEmail, changePassword, sendEmail, remove;
 
     private EditText oldEmail, newEmail, password, newPassword;
@@ -240,7 +240,9 @@ public class Parametre extends AppCompatActivity
         });
 
     }
-
+    public void signOut() {
+        auth.signOut();
+    }
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
@@ -267,7 +269,7 @@ public class Parametre extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(Parametre.this, About.class);
+            Intent intent = new Intent(Parametre.this, Infos.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){

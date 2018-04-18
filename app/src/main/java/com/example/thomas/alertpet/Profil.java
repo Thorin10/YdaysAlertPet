@@ -71,7 +71,7 @@ public class Profil extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(Profil.this, About.class);
+            Intent intent = new Intent(Profil.this, Infos.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){

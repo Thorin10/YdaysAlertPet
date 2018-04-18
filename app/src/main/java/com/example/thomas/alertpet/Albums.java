@@ -67,7 +67,7 @@ public class Albums extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(Albums.this, About.class);
+            Intent intent = new Intent(Albums.this, Infos.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){
