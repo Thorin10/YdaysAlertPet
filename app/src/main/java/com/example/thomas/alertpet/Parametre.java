@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class Parametre extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
-    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser,
+    private Button btnChangeEmail, btnChangePassword, btnSendResetEmail, btnRemoveUser, signOut,
             changeEmail, changePassword, sendEmail, remove;
 
     private EditText oldEmail, newEmail, password, newPassword;
