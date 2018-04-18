@@ -267,7 +267,7 @@ public class Parametre extends AppCompatActivity
             startActivity(intent);
         }
         else if (id == R.id.about) {
-            Intent intent = new Intent(Parametre.this, About.class);
+            Intent intent = new Intent(Parametre.this, Infos.class);
             startActivity(intent);
         }
         else if (id == R.id.disconnect){
