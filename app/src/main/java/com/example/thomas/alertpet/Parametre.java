@@ -240,7 +240,9 @@ public class Parametre extends AppCompatActivity
         });
 
     }
-
+    public void signOut() {
+        auth.signOut();
+    }
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
